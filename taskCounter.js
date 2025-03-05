@@ -38,6 +38,12 @@ for (let i = 0; i < completeBtn.length; i++) {
     const historyLog = document.getElementById("historyLog")
     historyLog.appendChild(history)
 
+    if(convertedTask == "00"){
+      alert("Congrats!!!! You have completed all the task");
+    }
+    else{
+      
+    }
 
 
 

@@ -68,9 +68,9 @@
        
         <div class="flex flex-2 items-center gap-3 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-xl pr-5 pl-2 ">
           <img class="pl-8 py-2" src="assets/board.png" alt="">
-          <div class="text-white font-poppins  font-normal text-xl">
-            <p>Discover Something</p>
-            <p>New Today!</p>
+          <div id="blogBtn" class="text-white font-poppins  font-normal text-xl cursor-pointer">
+            <p>Discover Something New Today!</p>
+            <!-- <p>New Today!</p> -->
           </div>
         </div>
   
@@ -79,8 +79,8 @@
            <img class="w-10 h-10 p-2  " src="assets/calender.png" alt="">
           </div>
          <div>
-           <p>Wed ,</p>
-           <p class="font-bold text-lg">July 28, 2025</p>
+           <!-- <p>Wed ,</p> -->
+           <p id="liveDate" class="font-bold text-lg"> </p>
          </div>
        </div>
   
@@ -215,12 +215,11 @@
         <img class="w-5 h-5" src="assets/activity.png" alt="">
         <p class="text-sm">Activity Log</p>
       </div>
-      <button class="btn btn-primary text-xs mt-5 mb-5">Clear History</button>
+      <button id="clearBtn" class="btn btn-primary text-xs mt-5 mb-5">Clear History</button>
 
 
 
 
-      <!-- EKANE TASK HISTORY ADD HOBE CLICK KORAR POR -->
       <!-- Task history log -->
        <div id="historyLog" class="font-poppins text-left">
           
@@ -238,6 +237,9 @@
 
   <script src="colorchange.js"></script>
   <script src="taskCounter.js"></script>
+  <script src="clearHistory.js"></script>
+  <script src="liveDate.js"></script>
+  <script src="goToBlog.js"></script>
 </body>
 </html>
 
