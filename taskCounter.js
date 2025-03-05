@@ -5,7 +5,7 @@ for (let i = 0; i < completeBtn.length; i++) {
   completeBtn[i].addEventListener('click', function(event) {
     event.preventDefault();
 
-    // add a Alert for challenge task
+    
     alert("Board Updated Successfully")
 
     const taskCount = document.getElementById('taskNumber').innerText ;
@@ -22,6 +22,21 @@ for (let i = 0; i < completeBtn.length; i++) {
 
 
     this.disabled = true;
+
+    const time = new Date();
+    const exactTime = time.toLocaleTimeString();
+    const taskName = this.parentElement.parentElement.querySelector("p.cardTitle").innerText;
+
+    
+    const history = document.createElement('p');
+    history.classList.add("mb-5")
+    history.innerText = `You have completed the "${taskName}" task at ${exactTime}`;
+
+    
+
+
+    const historyLog = document.getElementById("historyLog")
+    historyLog.appendChild(history)
 
 
 
